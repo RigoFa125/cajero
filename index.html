@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Javascript => defer hace que el script se cargue al final-->
+    <script defer src="./controllers/main.js"></script>
+    <title>Cajero</title>
+  </head>
+  <body>
+    <section>
+      <div id="login">
+        <h2>Cajero</h2>
+        <label for="user">Email</label>
+        <input id="user" type="text"  placeholder="Introduce tu correo electronico"/>
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" placeholder="Introduce tu contraseña"/>
+        <button id="loginButton">Ingresar</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="cajero" style="display: none;">
+        <h2>Bienvenid@, <span id="nombreUsuario"></span></h2>
+        <button onclick="consultarSaldo()">Consultar saldo</button><br>
+        <label for="montoIngresar">Monto a ingresar:</label>
+        <input type="number" id="montoIngresar">
+        <button onclick="ingresarMonto()">Ingresar monto</button><br>
+        <label for="montoRetirar">Monto a retirar:</label>
+        <input type="number" id="montoRetirar">
+        <button onclick="retirarMonto()">Retirar monto</button><br>
+        <button onclick="finalizarSesion()">Cerrar sesión</button><br>
+    </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#login {
+  background-color: rgb(188, 177, 177);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 50%;
+  height: 15em;
+}
+h2 {
+  text-align: center;
+}
+
+#cajero {
+  background-color: rgb(188, 177, 177);
+  display: block;
+  
+  border-radius: 15px;
+  padding: 10px;
+  width: 50%;
+  height: 15em;
+}
+
+
+
